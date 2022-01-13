@@ -4,11 +4,10 @@
   "description": "Learn Japanese with friend",
   "main": "src/index.js",
   "scripts": {
-    "pre-commit": "lint-staged",
+    "format": "prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{js,json,scss}",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -25,9 +24,6 @@
     "url": "https://github.com/binhkio123/jp_learn/issues"
   },
   "homepage": "https://github.com/binhkio123/jp_learn#readme",
-  "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
-  },
   "dependencies": {
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",

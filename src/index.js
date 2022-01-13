@@ -12,8 +12,8 @@ const handlebars = require('express-handlebars'); // handlebars support code HTM
 const hbs = handlebars.create({ extname: '.hbs' });
 
 // TEMPLATE ENGINE
-            app.engine('hbs', hbs.engine);
-            app.set('view engine', 'hbs');
+app.engine('hbs', hbs.engine);
+app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
 console.log('PATH: ', path.join(__dirname, 'resources/views')); //xem đường dẫn
