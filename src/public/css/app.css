@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Yesteryear);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  --primary-color: #b2b2b2;
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color: #666;
+  --text-color: #333;
+  --plum-color: #b80257;
+  --fb-color: #4080ff;
+  --mail-color: #f47425;
+  --invalid-color: #f33a58;
+  --desc-color: #0000008a;
+  --first-color: #1dbfaf;
+  --second-color: #1dbfaf;
+  --button-color: #1dbfaf;
+  --button-image: linear-gradient(70.06deg, #2cccff -5%, #22dfbf 106%);
+  --font-family: "Montserrat",Arial,Helvetica,sans-serif;
+  --home-slideshow-left-space: 116px;
+  --home-section-left-space: 160px; }
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, cursive;
+  background: linear-gradient(180deg, #ffc8fc 0%, #ea74f5 100%) no-repeat center fixed; }
+
+.main {
+  margin: 10px 10px; }
+
+.list-game {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #f091f8 0%, #f5c3fc 100%); }
+
+.game-play {
+  text-align: center;
+  text-shadow: 1px 1px 1px #4b93ff;
+  border-radius: 50px;
+  font-weight: bold;
+  width: 25%;
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 28px; }
+
+.game-play > a {
+  text-decoration: none;
+  color: #f0f0f0; }
+
+.game-play:hover {
+  color: #fafafa;
+  text-shadow: 2px 2px 2px #4b93ff;
+  background: linear-gradient(180deg, #f9c6fd 0%, #f4a3ff 100%); }
+
+.chosen {
+  color: #b623ff;
+  border-width: 2px; }
+
+.playing {
+  color: #8223ff; }
+
+.x-color {
+  color: #ff4040; }
+
+.o-color {
+  color: #1647fb; }
+
+.game-display {
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 50px; }
+
+.game-time, .game-score {
+  width: fit-content; }
+
+.start-button {
+  cursor: pointer; }
+
+.game-board {
+  max-width: 400px;
+  max-height: 300px;
+  display: flex;
+  flex-flow: row wrap; }
+
+.square {
+  width: 100px;
+  height: 100px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px; }
+
+.xo-square {
+  width: 50px;
+  height: 50px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+  font-size: 30px; }
+
+.snake-game-board {
+  margin-top: 5px;
+  border-color: #707070;
+  border-style: solid;
+  border-width: 2px; }
+
+.snake-square {
+  width: 10px;
+  height: 10px;
+  border-color: transparent; }
+
+.snake-square.snake-color {
+  background-color: green;
+  border-radius: 20px; }
+
+.apple-color {
+  background-color: #801300;
+  border-radius: 20px; }
+
+.appleS-color {
+  background-color: #ffc400;
+  border-radius: 20px; }
+
+.footer {
+  margin-top: 90px; }
